@@ -1,0 +1,3 @@
+/home/panda99/Desktop/myProject/build/CMakeFiles/rebuild_cache.dir
+/home/panda99/Desktop/myProject/build/CMakeFiles/edit_cache.dir
+/home/panda99/Desktop/myProject/build/CMakeFiles/CgalProject.dir

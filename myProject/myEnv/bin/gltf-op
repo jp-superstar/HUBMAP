@@ -1,0 +1,21 @@
+#!/home/panda99/Desktop/myProject/myEnv/bin/python3
+import sys
+
+from gltf import ops, GLTF
+
+
+def run():
+    if len(sys.argv) < 2:
+        print("Please specify an operation to perform:", dir(ops))
+        return
+    if len(sys.argv) < 3:
+        print("Please specify a gltf file to load")
+        return
+    op = getattr(ops, sys.argv[1])
+    model = GLTF.load(sys.argv[2])
+    op(model)
+    # TODO: for some operations make this repair and save the model as well
+
+
+if __name__ == "__main__":
+    run()
